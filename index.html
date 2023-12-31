@@ -1,0 +1,17 @@
+<h3>락스 희석 계산기</h3>
+<table border=0><tbody>
+<tr><td>원액 농도:&nbsp;</td><td><input size=5 id=0 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;%</td></tr>
+<tr><td>목표 ppm:&nbsp;</td><td><input size=5 id=1 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ppm</td></tr>
+<tr><td>원액 투입비:&nbsp;</td><td><p id=2 align="center"></p></td><td>&nbsp;%</td></tr>
+<tr><td>희석액 총량:&nbsp;</td><td><input size=5 id=3 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ml</td></tr>
+<tr><td>원액 투입량:&nbsp;</td><td><p id=4 align="center"></p></td><td>&nbsp;ml</td></tr>
+<tr><td colspan=3><input id=9 style="border:0" onclick="rs(this.id)" onkeyup="ra(this.id)"></td></tr>
+</tbody>
+</table>
+<script>
+function ge(a){return document.getElementById(a)}
+function tf(a){return parseFloat(a).toFixed(3)}
+function rs(a){ge(a).value=""}
+function ppm(){var m=tf((ge(1).value/1000000)/(ge(0).value/100));ge(2).innerHTML=tf(m*100);ge(4).innerHTML=tf(m*ge(3).value)}
+function ra(a){if(ge(a).value=="`"){rs(a);for(var i=0;i<9;i++){rs(i)}}}
+</script>
