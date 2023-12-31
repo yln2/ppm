@@ -10,7 +10,7 @@
 </table>
 <script>
 function ge(a){return document.getElementById(a)}
-function tf(a){return parseFloat(a).toFixed(3)}
+function tf(a){return parseFloat(a).toFixed(1)}
 function rs(a){ge(a).value=""}
 function ppm(){var m=tf((ge(1).value/1000000)/(ge(0).value/100));ge(2).innerHTML=tf(m*100);ge(4).innerHTML=tf(m*ge(3).value)}
 function ra(a){if(ge(a).value=="`"){rs(a);for(var i=0;i<9;i++){rs(i)}}}
