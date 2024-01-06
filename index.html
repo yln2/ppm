@@ -1,11 +1,15 @@
-<fieldset padding=0><legend>락스 희석 계산기</legend><table border=0><tbody>
+<form autocomplete="off" style="display:flex;"><fieldset padding=0><legend>락스 희석 계산기</legend><table border=0><tbody>
 <tr><td>원액 농도:&nbsp;</td><td><input size=8 id=0 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;%</td></tr>
 <tr><td>목표 ppm:&nbsp;</td><td><input size=8 id=1 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ppm</td></tr>
 <tr><td>원액 투입률:&nbsp;</td><td><p id=2 align="center"></p></td><td>&nbsp;%</td></tr>
 <tr><td>희석액 총량:&nbsp;</td><td><input size=8 id=3 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ml</td></tr>
 <tr><td>원액 투입량:&nbsp;</td><td><p id=4 align="center"></p></td><td>&nbsp;ml</td></tr>
 </tbody></table></fieldset>
-<input id=9 style="width:99%;border:0" onclick="rs(this.id)" onkeyup="ra(this.id)"><hr>
+<fieldset><legend>섬유 얼룩 제거 [yuhanrox.co.kr/RoxStory/7989]</legend>
+갓 생긴 얼룩: 600ppm 15~20분<br>오래된 얼룩: 1800ppm 15~20분<br>끈질긴 얼룩: 4000ppm 단시간, 손상 가능</fieldset>
+</form>
+<input id=9 style="width:99%;border:0" onclick="rs(this.id)" onkeyup="ra(this.id)">
+<hr>
 <fieldset><legend>희석 가이드 [namu.wiki/w/락스#s-5.1]</legend><table cellpadding=2 frame="box" rules="all"><tbody>
 <tr><td align="center">목표 ppm&nbsp;</td><td align="center">대상</td></tr>
 <tr><td align="center">5000</td><td>(나무, 스펀지 등) 흡수성 있는 표면의 심한 오염(토사물, 배설물 등) / <br>특수 균류·곰팡이류 / Dakin's Solution 최대치</td></tr>
@@ -19,8 +23,6 @@
 <tr><td align="center">50</td><td>최소 살균소독</td></tr>
 <tr><td align="center">5</td><td>(육류 등) 오래된 식재료 부패 방지 최소치</td></tr>
 </tbody></table></fieldset>
-<fieldset><legend>섬유 얼룩 제거 [yuhanrox.co.kr/RoxStory/7989]</legend>
-갓 생긴 얼룩: 600ppm 15~20분<br>오래된 얼룩: 1800ppm 15~20분<br>끈질긴 얼룩: 4000ppm 단시간, 손상 가능</fieldset>
 <script>
 function ge(a){return document.getElementById(a)}
 function tf(a){return parseFloat(a).toFixed(2)}
