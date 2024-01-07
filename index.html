@@ -1,3 +1,4 @@
+<fieldset style="border:0">
 <form autocomplete="off" style="display:flex;"><fieldset padding=0><legend>락스 희석 계산기</legend><table border=0><tbody>
 <tr><td>원액 농도:&nbsp;</td><td><input size=8 id=0 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;%</td></tr>
 <tr><td>목표 ppm:&nbsp;</td><td><input size=8 id=1 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ppm</td></tr>
@@ -5,8 +6,8 @@
 <tr><td>희석액 총량:&nbsp;</td><td><input size=8 id=3 onclick="rs(this.id)" onkeyup="ppm()"></td><td>&nbsp;ml</td></tr>
 <tr><td>원액 투입량:&nbsp;</td><td><p id=4 align="center"></p></td><td>&nbsp;ml</td></tr>
 </tbody></table></fieldset><fieldset style="border:0">&nbsp;</fieldset>
-<fieldset><legend>재희석용 ppm 환산기</legend>
-<input size=5 id=5 placeholder="ppm" onclick="rs(this.id)" onkeyup="p2p()"><input size=5 id=6 placeholder="%" onclick="rs(this.id)" onkeyup="p2m()"><hr>
+<fieldset><legend>재희석 ppm 환산</legend>
+<input size=5 id=5 placeholder="ppm" onclick="rs(this.id)" onkeyup="p2p()">　<input size=5 id=6 placeholder="%" onclick="rs(this.id)" onkeyup="p2m()"><hr>
 섬유 얼룩 제거 [yuhanrox.co.kr/RoxStory/7989]<br>갓 생긴 얼룩: 600ppm 15~20분<br>오래된 얼룩: 1800ppm 15~20분<br>끈질긴 얼룩: 4000ppm 단시간, 손상 가능</fieldset>
 </form>
 <input id=9 style="width:99%;border:0" onclick="rs(this.id)" onkeyup="ra(this.id)">
@@ -16,14 +17,14 @@
 <tr><td align="center">5000</td><td>(나무, 스펀지 등) 흡수성 있는 표면의 심한 오염(토사물, 배설물 등) / <br>특수 균류·곰팡이류 / Dakin's Solution 최대치</td></tr>
 <tr><td align="center">3750</td><td>곰팡이 제거 / 흡수성 없는 표면의 심한 오염(5분)</td></tr>
 <tr><td align="center">2500</td><td>흡수성 없는 표면의 심한 오염(10분) / Dakin's Solution 권장치</td></tr>
-<tr><td align="center">1000</td><td>흡수성 없는 표면의 각종 바이러스 등 / 일부 준위험 의료기구 / 코로나19 대응</td></tr>
+<tr><td align="center">1000</td><td>흡수성 없는 표면의 각종 바이러스 등 / 일부 준위험 의료기구 / 코로나-19 대응　　</td></tr>
 <tr><td align="center">500</td><td>인체 소독 최대치(세척 필요) / 홍수 침수 물품 / 정원용품</td></tr>
 <tr><td align="center">250</td><td>일반 인체 소독 / 세탁기 살균소독</td></tr>
 <tr><td align="center">200</td><td>비세척 살균소독 / 비세척 식재료</td></tr>
 <tr><td align="center">100</td><td>과일·채소, 비위험 의료기구</td></tr>
 <tr><td align="center">50</td><td>최소 살균소독</td></tr>
 <tr><td align="center">5</td><td>(육류 등) 오래된 식재료 부패 방지 최소치</td></tr>
-</tbody></table></fieldset></form>
+</tbody></table></fieldset></form></fieldset>
 <script>
 function ge(a){return document.getElementById(a)}
 function tf(a){return parseFloat(a).toFixed(2)}
