@@ -29,8 +29,8 @@ function ge(a){return document.getElementById(a)}
 function tf(a){return parseFloat(a).toFixed(2)}
 function rs(a){ge(a).value=""}
 function ppm(){var m=(ge(1).value/1000000)/(ge(0).value/100);ge(2).innerHTML=tf(m*100);ge(4).innerHTML=tf(m*ge(3).value)}
-function ptp(a){ge(6).value=ge(a).value/10000+"ppm"}
-function ptm(a){ge(5).value=ge(a).value*10000+"%"}
+function ptp(a){ge(6).value=ge(a).value/10000+" ppm"}
+function ptm(a){ge(5).value=ge(a).value*10000+" %"}
 function ra(a){if(ge(a).value=="`"){location.href=location.origin+location.pathname}else if(ge(a).value=="s"){ge(a).outerHTML="?"+ge(0).value+"p"+ge(1).value+"m"+ge(3).value}}
 var k=location.search.substring(1).split(/\D+/);
 if(k.length>2){ge(0).value=k[0];ge(1).value=k[1];ge(3).value=k[2];ppm()}
